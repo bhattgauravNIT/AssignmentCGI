@@ -1,0 +1,181 @@
+#ButtonFinal{
+    margin-top: 23rem;
+    margin-left: 55rem;
+}
+.my-form{
+    padding:none;
+    border-radius: none;
+}
+matformfeild,input{
+    max-width:800px; 
+}
+.divisona{
+    background-color: honeydew;
+}
+.abc{
+    padding : 15 rem;
+    margin-left: 8rem;
+    margin-top: 5rem;
+    background-color: gainsboro;
+}
+
+.divisona{
+    margin-top: 10rem;
+    background-color:gainsboro;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    height: 31rem;
+    border-color: black;
+    border-style: solid;
+    border-radius: 1.5rem;
+}
+.label1{
+    font-size: 2rem;
+}
+
+#headerslabel{
+    font-size: 1.5rem;
+    color:black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-height: 20rem;
+    padding: 0.5rem;
+    font: outline;
+    font-weight: bolder;
+    
+}
+.formdiv{
+    margin-left: 5rem;
+}
+html{
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    color: #878787;
+}
+*, *::before, *:after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+main{
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: gainsboro;
+}
+
+
+/*********************
+        Form
+*********************/
+select, option, button{
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: Black;
+    
+}
+input{
+    padding: 0.8rem 1.0rem;
+    font-size: 1.2rem;
+    color:black;
+    max-width: 550px;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    
+}
+::placeholder{
+    font-size: medium;
+    font-weight: lighter;
+}
+
+label{
+    color:black;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 450;
+}
+#gengrebox{
+    max-width: 773px;
+    
+}
+#genrebar option{
+    font-size: medium;
+}
+#genrebar{
+    border-style: solid;
+    border-color: black;
+    max-height: 25px;
+    border-radius: 0.8rem;
+
+}
+.form-box{
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    color:gainsboro;
+    
+}
+.form-box label{
+    display: none;
+}
+.form-box input,
+.form-box select,
+.form-box textarea{
+    flex-basis: 100%;
+}
+/* .form-box button{
+    
+} */
+
+/*******************************
+        Media Queries
+*******************************/
+/* @media all and (min-width: 500px){
+    .form-box{
+        
+    } */
+    .form-box label{
+        display: block;
+    }
+    /* .form-box input,
+    .form-box select,
+    .form-box textarea{
+        
+    }
+    .form-box button{
+
+    }
+} */
+
+@media all and (min-width: 600px){
+    .form-box{
+        flex-direction: row;
+    }
+    .form-box label{
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .form-box input,
+    .form-box select,
+    .form-box textarea{
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .form-box button{
+        margin-left: 9rem;
+    }
+}
+#Description{
+  max-height: 800px;
+}
+
+#ButtonFinal{
+    margin-top: 23rem;
+    margin-left: 55rem;
+}

@@ -1,0 +1,52 @@
+<div [formGroup]="UploadForm">
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Basic Book Details">
+            <div class="maindiv">
+                <mat-form-field appearance="outline">
+                    <mat-label>Book Title</mat-label>
+                    <input matInput formControlName="Title">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Book Author</mat-label>
+                    <input matInput formControlName="Author" >
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Book Description</mat-label>
+                    <input matInput formControlName="Description">
+                </mat-form-field>
+            </div>
+            
+        </mat-tab>
+        <mat-tab label="Book Description">
+            <div class="maindiv">
+                <mat-form-field appearance="outline">
+                    <mat-label>Publisher</mat-label>
+                    <input matInput formControlName="Publisher">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                <mat-label>Genre</mat-label>
+                <mat-select matInput formControlName="Genre">
+                <mat-option value="Mystery">Mystery</mat-option>
+                <mat-option value="Horror">Horror</mat-option>
+                <mat-option value="Comedy">Comedy</mat-option>
+                <mat-option value="Science">Science</mat-option>
+                <mat-option value="Sci-fy">Sci-fy</mat-option>
+                <mat-option value="Thriller">Thriller</mat-option>
+                </mat-select>
+                </mat-form-field>
+                
+    
+                <mat-form-field appearance="outline">
+                    <mat-label>Total Page</mat-label>
+                    <input matInput formControlName="TotalPage">
+                </mat-form-field>
+    
+            </div>
+            
+        </mat-tab>
+        <mat-tab label="Upload Book">
+            <button class="btn" mat-raised-button (click)="UploadBook()" >Upload</button>
+
+        </mat-tab>
+    </mat-tab-group>
+</div>
